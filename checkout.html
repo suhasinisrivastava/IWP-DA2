@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>checkout</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom admin css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+    <header class="header">
+
+        <div class="flex">
+    
+            <div class="img-logo-zoom"><a href="home.html" class="logo"><img class="logo-img"src="images\Florabelle.png"></a></div>
+    
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="#">more</a>
+                        <ul>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html">shop</a></li>
+                    <li><a href="orders.html">orders</a></li>
+                    <li><a href="#">account </a>
+                        <ul>
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="register.html">register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <a href="search_page.html" class="fas fa-search"></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                
+                <a href="wishlist.html"><i class="fas fa-heart"></i><span>(0)</span></a>
+                
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(0)</span></a>
+            </div>
+    
+            <div class="account-box">
+                <p>username : <span>suhasini</span></p>
+                <p>email : <span>suhasini@gmail.com</span></p>
+                <a href="login.html" class="delete-btn">logout</a>
+            </div>
+    
+        </div>
+    
+    </header>
+
+<section class="heading">
+    <h3>checkout order</h3>
+</section>
+
+<section class="display-order">
+   
+    
+    <div class="grand-total">grand total : <span>Rs.10/-</span></div>
+</section>
+
+<section class="checkout">
+
+    <form action="" method="POST">
+
+        <h3>place your order</h3>
+
+        <div class="flex">
+            <div class="inputBox">
+                <span>your name :</span>
+                <input type="text" name="name" placeholder="enter your name">
+            </div>
+            <div class="inputBox">
+                <span>your number :</span>
+                <input type="number" name="number" min="0" placeholder="enter your number">
+            </div>
+            <div class="inputBox">
+                <span>your email :</span>
+                <input type="email" name="email" placeholder="enter your email">
+            </div>
+            <div class="inputBox">
+                <span>payment method :</span>
+                <select name="method">
+                    <option value="cash on delivery">cash on delivery</option>
+                    <option value="credit card">credit card</option>
+                    <option value="paypal">paypal</option>
+                    <option value="paytm">paytm</option>
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>address line 01 :</span>
+                <input type="text" name="flat" placeholder="e.g. flat no.">
+            </div>
+            <div class="inputBox">
+                <span>address line 02 :</span>
+                <input type="text" name="street" placeholder="e.g.  streen name">
+            </div>
+            <div class="inputBox">
+                <span>city :</span>
+                <input type="text" name="city" placeholder="e.g. mumbai">
+            </div>
+            <div class="inputBox">
+                <span>state :</span>
+                <input type="text" name="state" placeholder="e.g. maharashtra">
+            </div>
+            <div class="inputBox">
+                <span>country :</span>
+                <input type="text" name="country" placeholder="e.g. india">
+            </div>
+            <div class="inputBox">
+                <span>pin code :</span>
+                <input type="number" min="0" name="pin_code" placeholder="e.g. 123456">
+            </div>
+        </div>
+
+        <input type="submit" name="order" value="order now" class="btn">
+
+    </form>
+
+</section>
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+ 
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html">home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="shop.html">shop</a>
+        </div>
+ 
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="login.html">login</a>
+            <a href="register.html">register</a>
+            <a href="orders.html">my orders</a>
+            <a href="cart.html">my cart</a>
+        </div>
+ 
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> suhasini@gmail.com </p>
+            <p> <i class="fas fa-map-marker-alt"></i>Vellore, india  </p>
+        </div>
+ 
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        </div>
+ 
+    </div>
+ 
+    <div class="credit">&copy; made with <i class="fa-solid fa-heart"></i> by <span>Suhasini</span> </div>
+ 
+ </section>
+
+
+</body>
+</html>
