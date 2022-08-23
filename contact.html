@@ -70,13 +70,13 @@
 
 <section class="contact">
 
-    <form action="" method="POST">
+    <form action="">
         <h3>send us message!</h3>
-        <input type="text" name="name" placeholder="enter your name" class="box" required> 
-        <input type="email" name="email" placeholder="enter your email" class="box" required>
-        <input type="number" name="number" placeholder="enter your number" class="box" required>
-        <textarea name="message" class="box" placeholder="enter your message" required cols="30" rows="10"></textarea>
-        <input type="submit" value="send message" name="send" class="btn">
+        <input type="text" name="name" id="name" placeholder="enter your name" class="box"> 
+        <input type="email" name="email" id="email" placeholder="enter your email" class="box">
+        <input type="text" name="number" id="number" placeholder="enter your number with country code" class="box">
+        <textarea name="message" class="box"  id="message"placeholder="enter your message" required cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" id="submit" name="send" class="btn">
     </form>
 
 </section>
@@ -124,7 +124,7 @@
  
  </section>
 
-
+ <script src="js/contact.js"></script>
 
 </body>
 </html>

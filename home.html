@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body onload = "fun()">
    
    <header class="header">
 
@@ -76,20 +76,20 @@
    <br>
    <br>
 
-   <div class="box-container">
+   <div class="box-container" >
 
       
-      <form action="" method="POST" class="box">
-         <div class="price">Rs.10/-</div>
-         <img src="flowers\fun bloomnation.jpg" alt="" class="image">
+      <form action="" method="POST" class="box" onmouseover="bigImg1(this)" onmouseout="normalImg1(this)">
+         <div class="price" >Rs.10/-</div>
+         <img src="flowers\fun bloomnation.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)" class="image">
          <div class="name"></div>
-         <input type="number" name="product_quantity" value="1" min="0" class="qty">
+         <input type="number" name="product_quantity" id="demo" value="1" min="0" class="qty" onkeydown="keydownFunction()" onkeyup="keyupFunction()"onchange="myFunction(this.value)">
          <input type="hidden" name="product_id" >
          <input type="hidden" name="product_name" >
          <input type="hidden" name="product_price" >
          <input type="hidden" name="product_image" >
-         <a href="wishlist.html" value="add to wishlist" name="add_to_wishlist" class="option-btn">add to wishlist</a>
-         <a href="cart.html" value="add to cart" name="add_to_cart" class="btn">add to cart</a>
+         <a href="wishlist.html" value="add to wishlist" name="add_to_wishlist" class="option-btn" onclick="return confirm('Add to wishlist?');">add to wishlist</a>
+         <a href="cart.html" value="add to cart" name="add_to_cart" class="btn" onclick="return confirm('Add to cart?');">add to cart</a>
       </form>
       
 
@@ -152,7 +152,41 @@
    <div class="credit">&copy; made with <i class="fa-solid fa-heart"></i> by <span>Suhasini</span> </div>
 
 </section>
+<script >
+    
+function bigImg(x) {
+  //x.style.height = "120%";
+  x.style.width = "90%";
+}
 
+function normalImg(x) {
+  //x.style.height = "100%";
+  x.style.width = "100%";
+}
+function bigImg1(x) {
+  //x.style.height = "120%";
+  x.style.width = "170%";
+}
+
+function normalImg1(x) {
+  //x.style.height = "100%";
+  x.style.width = "100%";
+}
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "#95d2f5";
+}
+
+function keyupFunction() {
+  document.getElementById("demo").style.backgroundColor = "#f0d58d";
+}
+function fun() {  
+      alert("Welcome to the FloraBelle!");  
+   }  
+   function myFunction(val) {
+  alert("You have selected " + val+" items");
+}
+
+</script>
 
 </body>
 </html>

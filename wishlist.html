@@ -74,7 +74,7 @@
     <div class="box-container">
 
     <form action="" method="POST" class="box">
-        <a href="wishlist.html" class="fas fa-times"></a>
+        <a href="wishlist.html" class="fas fa-times" onclick="return confirm('delete this from wishlist?');"></a>
         <img src="flowers\cottage rose.jpg" alt="" class="image">
         <div class="name"></div>
         <div class="price">Rs.10/-</div>
@@ -91,7 +91,7 @@
     <div class="wishlist-total">
         <p>grand total : <span>Rs.10/-</span></p>
         <a href="shop.html" class="option-btn">continue shopping</a>
-        <a href="wishlist.html" class="delete-btn" >delete all</a>
+        <a href="wishlist.html" class="delete-btn" onclick="return confirm('delete all from wishlist?');" >delete all</a>
     </div>
 
 </section>
@@ -137,6 +137,6 @@
     <div class="credit">&copy; made with <i class="fa-solid fa-heart"></i> by <span>Suhasini</span> </div>
  
  </section>
-
+ <script src="js/script.js"></script>
 </body>
 </html>
